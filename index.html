@@ -1,57 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title> yoyube</title>
-    <style>
-        .thumbnail{
-            height:300px;
-            width: 300px;
-            object-fit: cover;
-            object-position: left;
-            display: inline-block;
-
-        }
-        .search{
-             text-decoration-color: blueviolet;
-            text-align: center;
-            cursor: pointer;
-        }
-        .search1{
-            font-style: italic;
-            cursor: pointer;
-        }
-        .paragraph1{
-            cursor:pointer;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTES - Your Personal Media Hub</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<div class="search">
-    <body>
-        <input class="search1" "text" placeholder="search">
-    </body>
-</div>
-<div>
+
 <body>
-    <img  class="thumbnail" src="WhatsApp Image 2024-10-16 at 18.46.24_9790fd16.jpg">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>NOTES</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
 
-<p >
-    hi this is the picture of mine
-</p>
-<p>
-    MR EDITS
-</p>
-<p>
-    10m - 
-</p>
-<a href="WhatsApp Image 2024-10-16 at 18.46.24_9790fd16.jpg">
-    youtube
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Welcome to NOTES</h2>
+                <p>Your personal media hub for sharing and discovering content</p>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search for content...">
+                    <button id="searchBtn">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</a>
+    <!-- Featured Content Section -->
+    <section class="featured">
+        <div class="container">
+            <h2>Featured Content</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Featured content" class="thumbnail">
+                    </div>
+                    <div class="card-body">
+                        <h3>MR EDITS</h3>
+                        <p class="card-meta">10m views</p>
+                        <p class="card-description">Check out this amazing content from MR EDITS</p>
+                        <a href="gallery.html" class="btn">View More</a>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Gallery" class="thumbnail">
+                    </div>
+                    <div class="card-body">
+                        <h3>Image Gallery</h3>
+                        <p class="card-meta">Explore collection</p>
+                        <p class="card-description">Browse through our curated image gallery</p>
+                        <a href="gallery.html" class="btn">Explore</a>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/300x200" alt="About" class="thumbnail">
+                    </div>
+                    <div class="card-body">
+                        <h3>About Us</h3>
+                        <p class="card-meta">Learn more</p>
+                        <p class="card-description">Discover what makes NOTES special</p>
+                        <a href="about.html" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 NOTES. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-</div>
-<div>
-  
-</div>
 
 </html>
